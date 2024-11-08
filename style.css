@@ -244,7 +244,7 @@ section .title::after {
   object-fit: cover;
   object-position: center top; /* Adjust focus area to show forehead */
   border-radius: 20px;
-  transform: scale(0.95); /* Slight zoom-out effect */
+  transform: scale(1.95); /* Slight zoom-out effect */
 }
 
 .about .about-content .right {
