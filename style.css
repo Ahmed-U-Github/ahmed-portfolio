@@ -612,7 +612,7 @@ section .title::after {
 
 .certification-block p {
   color: crimson; /* Change text color to crimson */
-  font-weight: bold; /* Make text bold */
+  font-weight: 600; /* Make text little bold */
   margin-top: 10px;
   text-align: center;
 }
