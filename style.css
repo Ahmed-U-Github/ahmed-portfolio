@@ -237,35 +237,13 @@ section .title::after {
 
 .about .about-content .left {
   width: 45%;
-  position: relative;
 }
-
 .about .about-content .left img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   object-position: center top; /* Adjust focus area to show forehead */
   border-radius: 20px;
-  filter: brightness(0.9) contrast(1.1); /* Slight adjustment for clarity */
-}
-
-/* Adding an overlay */
-.about .about-content .left::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background: rgba(30, 60, 120, 0.3); /* Blue overlay */
-  z-index: 1;
-}
-
-/* Ensures the image is below the overlay */
-.about .about-content .left img {
-  position: relative;
-  z-index: 0;
 }
 
 .about .about-content .right {
