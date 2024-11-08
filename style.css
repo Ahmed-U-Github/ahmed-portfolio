@@ -630,7 +630,43 @@ section .title::after {
   transform: scale(1.1);
 }
 
-/* Radiant light effect */
+
+/* Radiant crimson light effect */
+.certification-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(220, 20, 60, 0.5), 0 0 20px rgba(220, 20, 60, 0.3);
+  pointer-events: none;
+  z-index: 0;
+  animation: radiant-light 3s infinite linear;
+  opacity: 0.5;
+}
+
+/* Radiant light animation in crimson */
+@keyframes radiant-light {
+  0% {
+    box-shadow: 0 -5px 10px 3px rgba(220, 20, 60, 0.8);
+  }
+  25% {
+    box-shadow: 5px 0 10px 3px rgba(220, 20, 60, 0.8);
+  }
+  50% {
+    box-shadow: 0 5px 10px 3px rgba(220, 20, 60, 0.8);
+  }
+  75% {
+    box-shadow: -5px 0 10px 3px rgba(220, 20, 60, 0.8);
+  }
+  100% {
+    box-shadow: 0 -5px 10px 3px rgba(220, 20, 60, 0.8);
+  }
+}
+
+/* Radiant light effect 
 .certification-block::before {
   content: "";
   position: absolute;
@@ -645,8 +681,8 @@ section .title::after {
   animation: radiant-light 3s infinite linear;
   opacity: 0.5;
 }
-
-/* Radiant light animation */
+*/
+/* Radiant light animation 
 @keyframes radiant-light {
   0% {
     box-shadow: 0 -5px 10px 3px rgba(255, 215, 0, 0.8);
@@ -664,6 +700,7 @@ section .title::after {
     box-shadow: 0 -5px 10px 3px rgba(255, 215, 0, 0.8);
   }
 }
+*/
 
 /* contact section styling */
 .contact .title::after {
