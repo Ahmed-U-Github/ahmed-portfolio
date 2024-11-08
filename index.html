@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 1. Meta tags (should always come first) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed's Portfolio</title>
+
+    <!-- 2. Favicon (early to start loading) -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- 3. CSS files (load stylesheets early) -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- 4. Critical third-party scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 5. EmailJS setup (needs to load before your script.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("yRwTT4avjNua_tpRp");
+        })();
+    </script>
+
+    <!-- 6. Other third-party scripts that depend on jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- 7. Your custom script (should load last) -->
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+    <!-- Scroll Button start -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+    <!-- Scroll Button end -->
+    <!-- Navbar Start-->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#">Ahmed<span>U </span>Portfo<span>lio.</span>
+               </a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#home" class="menu-btn">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="menu-btn">About</a>
+                </li>
+                <li>
+                    <a href="#skills" class="menu-btn">Skills</a>
+                </li>
+                <li>
+                    <a href="#experience" class="menu-btn">Experience</a>
+                </li>
+                <li>
+                    <a href="#education" class="menu-btn">Education</a>
+                </li>                
+                <li>
+                    <a href="#certifications" class="menu-btn">Certifications</a>
+                </li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello 👋 I'm</div>
+                <div class="text-2">Ahmed U</div>
+                <div class="text-3">I'm a <span class="typing"></span>
+                </div>
+                <a class="web" href="#contact">Contact me <i class="fad fa-paper-plane"></i>
+               </a>
+                <a href="https://docs.google.com/document/d/1k3_QQLihp7ZTmCJczJ0BxlzKvDoqPNM9/edit?usp=sharing&ouid=102615569387141174525&rtpof=true&sd=true" target="_blank" rel="noreferrer">Get Resume <i class="fad fa-download"></i>
+               </a>
+            </div>
+        </div>
+    </section>                
+    <!-- Home Section End -->
+
+    <!-- About section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title fadein">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/Ahmed.jpg" alt="Ahmed U">
+                    <div>
+                        <div class="wrapper">
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://www.linkedin.com/in/ahmed-u22/" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-linkedin"></i>
+                                </div>
+                                <span>LinkedIn </a>
+                           </span>
+                            </div>
+                            <div class="buttonmob">
+                                <div class="button1">
+                                    <div class="icon">
+                                        <a href="https://x.com/ahmed_u2206" target="_blank" rel="noreferrer">
+                                            <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <span>Twitter </a>
+                              </span>
+                                </div>
+                            </div>
+                            <div class="buttonmob1"></div>
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://github.com/Ahmed-U-Github/" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                </div>
+                                <span>Github </a>
+                           </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Ahmed U and <span class="break">I'm a <span class="typing2"></span>
+                        </span>
+                    </div>
+                    <p>I am a dedicated and results-oriented DevOps Engineer with 4.5 years of experience. I thrive in dynamic environments, always eager to learn and tackle challenges. I have a strong foundation in infrastructure automation, containerization, and cloud services. Skilled in AWS, Kubernetes, Terraform, and Jenkins, I am passionate about building efficient, scalable solutions. I aim to bridge development and operations with streamlined CI/CD pipelines and effective monitoring. I am open to job opportunities that align with my skills and enthusiasm for continuous improvement in the DevOps space.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section End -->
+
+    <!-- Skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title fadein">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences</div>
+                    <p>I am a DevOps Engineer with a passion for automation and optimizing development workflows through efficient processes. I am highly motivated, results-oriented, self-driven, hard-working, fast learner, and constantly seeking to enhance my skills while staying informed about the latest DevOps practices. I possess strong knowledge of AWS, Azure, Docker, Kubernetes, Jenkins, Terraform, ArgoCD, Git, GitHub, MySQL, PostgreSQL, Nginx, Ubuntu, Linux, Prometheus, Grafana, Jira, Confluence, Airflow, and PagerDuty, and I am familiar with tools and frameworks that drive modern infrastructure and collaboration.</p>
+                </div>
+                <div class="column right">
+                    <div class="info">
+                        <a href="https://aws.amazon.com/about-aws/" target="_blank" rel="noreferrer">
+                            <img src="./images/aws.png" alt="aws" width="80" />
+                        </a>
+                        <a href="https://www.jenkins.io/" target="_blank" rel="noreferrer">
+                            <img src="./images/jenkins.png" alt="jenkins" width="80" />
+                        </a>
+                        <a href="https://kubernetes.io/" target="_blank" rel="noreferrer">
+                            <img src="./images/kubernetes.png" alt="kubernetes" width="80" />
+                        </a>
+                        <a href="https://argoproj.github.io/cd/" target="_blank" rel="noreferrer">
+                            <img src="./images/argocd.png" alt="argo cd" width="80" />
+                        </a>
+                        <a href="https://www.terraform.io/" target="_blank" rel="noreferrer">
+                            <img src="./images/terraform.png" alt="terraform" width="80" />
+                        </a>
+                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/git.png" alt="git" width="80" />
+                        </a>
+                        <a href="https://prometheus.io/" target="_blank" rel="noreferrer">
+                            <img src="./images/prometheus.png" alt="prometheus" width="80" />
+                        </a>
+                        <a href="https://grafana.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/grafana.png" alt="grafana" width="80" />
+                        </a>
+                        <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/mysql.png" alt="mysql" width="80" />
+                        </a>
+                        <a href="https://ubuntu.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/ubuntu.png" alt="ubuntu" width="80" />
+                        </a>
+                        <a href="https://www.pagerduty.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/pagerduty.png" alt="pagerduty" width="80" />
+                        </a>
+                        <a href="https://www.sonarsource.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/sonarqube.png" alt="sonarqube" width="80" />
+                        </a>
+                        <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/mongodb.png" alt="MongoDB" width="80" />
+                        </a>
+                        <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/docker.png" alt="docker" width="80" />
+                        </a>
+                        <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+                            <img src="./images/linux.png" alt="linux" width="80" /> 
+                        </a>
+                        <a href="https://azure.microsoft.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/azure.png" alt="azure" width="80" />
+                        </a>
+                        <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer">
+                            <img src="./images/jira.png" alt="jira" width="80" />
+                        </a>
+                        <a href="https://www.postman.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/postman.png" alt="postman" width="80" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills section end -->
+
+
+    <!-- Experience section start -->
+    <section class="experience" id="experience">
+        <div class="max-width">
+            <h2 class="title fadein">My Experience</h2>
+            <div class="carousel owl-carousel">
+            
+                <!-- Experience 1 -->
+                <div class="card">
+                    <div class="box">
+                        <p class="experience-title">Agilisium Consulting</p>
+                        <p>Senior DevSecOps Engineer</p>
+                        <p>(September 2023 - Present)</p>
+                        <ul>
+                            <li>Automated AWS infra setup across environments using Terraform.</li>
+                            <li>Established CI/CD pipelines in Jenkins with GitHub & AWS integration.</li>
+                            <li>Created Private Link & Transit Gateway for On-prem connectivity.</li>
+                            <li>Collaborated on automation, handling firewalls, DNS & VPNs.</li>
+                            <li>Ensured compliance via access control & regular audits.</li>
+                            <li>Led cost-optimization efforts, access management & SCP policies.</li>
+                            <li>Automated tag retrieval of services & cost emails via SES.</li>
+                            <li>Deployed an ECS cluster with ELB for high-availability applications.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Experience 2 -->
+                <div class="card">
+                    <div class="box">
+                        <p class="experience-title">Encore IT Services</p>
+                        <p>DevOps Engineer | SRE</p>
+                        <p>(June 2022 – September 2023)</p>
+                        <ul>
+                            <li>Managed AWS accounts with cross-account monitoring setups.</li>
+                            <li>Fixed Jenkins job issues and PagerDuty alerts during on-calls.</li>
+                            <li>Handled critical troubleshooting as part of on-call duties.</li>
+                            <li>Monitored cluster health and managed incidents on PagerDuty.</li>
+                            <li>Resolved issues in Pods, Nodes, PV/PVC, Deployments and Services.</li>
+                            <li>Extracted data from MySQL, MongoDB, and Redis via scripts.</li>
+                            <li>Built monitoring systems for proactive issue resolution.</li>
+                            <li>Configured Prometheus, Grafana and Loki for Kubernetes monitoring.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Experience 3 -->
+                <div class="card">
+                    <div class="box">
+                        <p class="experience-title">TCS - IT Company</p>
+                        <p>DevOps Engineer</p>
+                        <p>(May 2020 – June 2022)</p>
+                        <ul>
+                            <li>Managed AWS infrastructure in multiple environments with Terraform.</li>
+                            <li>Built frontend with CloudFront & S3, backend with API Gateway & RDS.</li>
+                            <li>Integrated AWS WAF for traffic protection and monitoring.</li>
+                            <li>Enabled consistent deployments, optimizing app performance.</li>
+                            <li>Set up CI/CD pipelines with AWS CodePipeline for deployments.</li>
+                            <li>Developed Lambda functions for weekend shutdowns, weekday starts.</li>
+                            <li>Integrated Airflow for orchestration and Vault for secret management.</li>
+                            <li>Worked on cloud security and compliance practices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience section end -->
+
+
+    <!-- Education section start -->
+    <section class="education" id="education">
+        <div class="max-width">
+            <h2 class="title fadein">My Education</h2>
+            <div class="education-content">
+                <div class="education-image">
+                    <img src="images/Education1.png">
+                </div>
+                <div class="education-cards">
+                    <div class="education-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="year">2017 - 2020</div>
+                            <h3>Bachelor Degree in Commerce - [B.COM CS]</h3>
+                            <p>Dr.MGR University - Chennai</p>
+                        </div>
+                    </div>
+            
+                    <div class="education-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="year">2015 - 2017</div>
+                            <h3>Higher Secondary Certificate - [HSC]</h3>
+                            <p>Gill Adarsh M.H.S.S - Chennai</p>
+                        </div>
+                    </div>
+            
+                    <div class="education-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="year">2015</div>
+                            <h3>Secondary School Certificate - [SSLC]</h3>
+                            <p>Gill Adarsh M.H.S.S - Chennai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education section end -->  
+   
+    <!-- Certifications section start -->
+    <section class="certifications" id="certifications">
+        <div class="max-width">
+            <h2 class="title fadein">My Certifications</h2>
+            <div class="certifications-content">
+            <div id="certificates">
+                <div class="certification-block">
+                    <a href="https://www.credly.com/badges/c7d6313a-7a94-4ec9-801a-fadb8419187d/public_url" target="_blank">
+                        <img src="images/aws-certified-security-specialty.png" alt="AWS CERTIFIED SECURITY SPECIALTY" width="150">
+                    </a>
+                    <p>AWS CERTIFIED SECURITY SPECIALTY</p>
+                </div>
+                <div class="certification-block">
+                    <a href="https://www.credly.com/badges/4f971a76-8429-48a2-94c4-9f4d9248b1df/public_url" target="_blank">
+                        <img src="images/cka-certified-kubernetes-administrator.png" alt="CERTIFIED KUBERNETES ADMINISTRATOR" width="155">
+                    </a>
+                    <p>CERTIFIED KUBERNETES ADMINISTRATOR</p>
+                </div>
+                <div class="certification-block">
+                    <a href="https://www.credly.com/badges/12d09d0a-99f3-44b8-94c9-d29ce34f60b1/public_url" target="_blank">
+                        <img src="images/aws-partner-technical-accredited.png" alt="AWS PARTNER TECHNICAL ACCREDITED" width="150">
+                    </a>
+                    <p>AWS PARTNER TECHNICAL ACCREDITED</p>
+                </div>
+                <div class="certification-block">
+                    <a href="https://www.credly.com/badges/a2f78568-05e6-4fdc-b3d5-b916b734e4ef/public_url" target="_blank">
+                        <img src="images/pagerduty-foundational-practitioner-certification.png" alt="PAGERDUTY FOUNDATIONAL PRACTITIONER" width="143">
+                    </a>
+                    <p>PAGERDUTY FOUNDATIONAL PRACTITIONER</p>
+                </div>
+                <div class="certification-block">
+                    <a href="https://www.credly.com/badges/3c173eae-8832-4447-b53a-1a4442f7fae0/public_url" target="_blank">
+                        <img src="images/incident-management-certification.png" alt="INCIDENT MANAGEMENT CERTIFICATION" width="135">
+                    </a>
+                    <p>INCIDENT MANAGEMENT CERTIFICATION</p>
+                </div>
+                <div class="certification-block">
+                    <a href="https://www.credly.com/badges/2cecc9c8-32eb-4995-b620-5eae3ae0a1c7/public_url" target="_blank">
+                        <img src="images/pagerduty-event-intelligence-certification.png" alt="PAGERDUTY EVENT INTELLIGENCE CERTIFICATION" width="137">
+                    </a>
+                    <p>PAGERDUTY EVENT INTELLIGENCE CERTIFICATION</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Certifications section end --> 
+
+    <!-- Contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title fadein">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Reach Out to me!</div>
+                    <p>Discuss a Project or just want to say Hi? My inbox is open for all.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Ahmed U</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Chennai, India</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope email-icon"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title"><a href="mailto:ahmedumar2206@gmail.com" target="_blank">ahmedumar2206@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text1">Stay Connected</div>
+                    <div>
+                        <div class="wrapper">
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://www.linkedin.com/in/ahmed-u22/" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-linkedin"></i>
+                                </div>
+                                <span>LinkedIn </a>
+                           </span>
+                            </div>
+                            <div class="buttonmob">
+                                <div class="button1">
+                                    <div class="icon">
+                                        <a href="https://x.com/ahmed_u2206" target="_blank" rel="noreferrer">
+                                            <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <span>Twitter </a>
+                              </span>
+                                </div>
+                            </div>
+                            <div class="buttonmob1"></div>
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://github.com/Ahmed-U-Github/" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                </div>
+                                <span>Github </a>
+                           </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form id="contact-form">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" id="from_name" name="from_name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" id="from_email" name="from_email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea id="message" name="message" cols="30" rows="10" placeholder="Describe Project..." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                    <!-- Success/Error messages -->
+                    <div id="success-message" style="display: none; color: green; margin-top: 10px; text-align: center;">
+                        Message sent successfully!
+                    </div>
+                    <div id="error-message" style="display: none; color: red; margin-top: 10px; text-align: center;">
+                        Failed to send message. Please try again.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://www.linkedin.com/in/ahmed-u22//" target="_blank" rel="noreferrer">Ahmed U</a> | <span class="far fa-copyright"></span> <span id="year"></span> All rights reserved </span>
+    </footer>
+    <!-- footer section end -->
+    <!-- External Javascript File start-->
+    <script src="script.js" async></script>
+    <!-- External Javascript File end-->
+</body>
+
+</html>
