@@ -942,30 +942,6 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  #homePageCoffeeBtn {
-      width: 150px;
-      bottom: 20px;
-      right: 20px;
-  }
-  
-  .coffee-support {
-      width: 150px;
-  }
-}
-
-@media (max-width: 500px) {
-  #homePageCoffeeBtn {
-      width: 130px;
-      bottom: 15px;
-      right: 15px;
-  }
-  
-  .coffee-support {
-      width: 130px;
-  }
-}
-
 /* Home Section Button - Fixed Position */
 #homePageCoffeeBtn {
   position: absolute;
