@@ -963,16 +963,3 @@ footer span a:hover {
   transform: scale(1.05);
   filter: brightness(1.05);
 }
-
-/* Add styles for the contact page button */
-.coffee-support {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  transition: transform 0.3s ease;
-}
-
-.coffee-support:hover {
-  transform: scale(1.05);
-}
