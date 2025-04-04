@@ -942,26 +942,74 @@ footer span a:hover {
   }
 }
 
-/* Add new styles for the homepage button */
+/* ADD THE NEW MEDIA QUERIES RIGHT HERE */
+@media (max-width: 768px) {
+  #homePageCoffeeBtn {
+    width: 150px;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .coffee-support {
+    width: 150px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 500px) {
+  #homePageCoffeeBtn {
+    width: 130px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .coffee-support {
+    width: 130px;
+  }
+}
+/* END OF NEW MEDIA QUERIES */
+
+/* Update existing styles for the homepage button */
 #homePageCoffeeBtn {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  position: fixed; /* Changed from absolute to fixed */
+  bottom: 30px;
+  right: 30px;
   z-index: 10;
   transition: transform 0.3s ease;
+  width: 180px; /* Set a fixed width */
+}
+
+#homePageCoffeeBtn img {
+  width: 100%; /* Make image fill container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
 }
 
 #homePageCoffeeBtn:hover {
   transform: scale(1.1);
+  filter: brightness(1.1); /* Slight brightness increase on hover */
 }
 
-/* Add styles for the contact page button */
+/* Update existing styles for contact page button */
 .coffee-support {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
   transition: transform 0.3s ease;
+  width: 180px; /* Match home button size */
+}
+
+.coffee-support a {
+  display: block;
+  width: 100%;
+}
+
+.coffee-support img {
+  width: 100%; /* Make image fill container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Match home button style */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Consistent shadow */
 }
 
 .coffee-support:hover {
