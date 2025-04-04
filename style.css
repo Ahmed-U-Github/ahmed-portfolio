@@ -327,6 +327,16 @@ section .title::after {
   color: #307de1;
 }
 
+/* Add this to your existing button1 styles */
+.button1 .icon i.fa-coffee {
+  color: crimson;
+  transition: all 0.3s ease;
+}
+
+.button1:hover .icon i.fa-coffee {
+  color: white;
+}
+
 /* skills section styling */
 .skills .title::after {
   background: #111;
