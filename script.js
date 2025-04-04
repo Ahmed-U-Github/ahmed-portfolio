@@ -85,40 +85,6 @@ $(document).ready(function () {
     },
   });
   // owl carousel script end
-
-  // Initialize AOS (Animate On Scroll) library
-    const buyMeCoffeeBtn = document.getElementById('buyMeCoffeeBtn');
-    const buyMeCoffeeImg = document.getElementById('buyMeCoffeeImg');
-    let scrollTimeout;
-    
-    function handleScroll() {
-        // Handle scrolling animation
-        buyMeCoffeeImg.classList.add('scrolling');
-        
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-            buyMeCoffeeImg.classList.remove('scrolling');
-        }, 500);
-        
-        // Check if we're near the footer
-        const windowHeight = window.innerHeight;
-        const documentHeight = document.documentElement.scrollHeight;
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const footerHeight = 150; // Approximate footer height in pixels
-        
-        // If we're within the footer range from the bottom
-        if (scrollTop + windowHeight > documentHeight - footerHeight) {
-            buyMeCoffeeBtn.classList.add('near-footer');
-        } else {
-            buyMeCoffeeBtn.classList.remove('near-footer');
-        }
-    }
-    
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-    
-    // Initial check
-    handleScroll();
 });
 
 // Get the current year

@@ -942,38 +942,28 @@ footer span a:hover {
   }
 }
 
-#buyMeCoffeeBtn {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    z-index: 50;
-    transition: transform 0.3s ease;
+/* Add new styles for the homepage button */
+#homePageCoffeeBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  transition: transform 0.3s ease;
 }
 
-#buyMeCoffeeBtn:hover {
-    transform: scale(1.1);
+#homePageCoffeeBtn:hover {
+  transform: scale(1.1);
 }
 
-#buyMeCoffeeImg {
-    width: 192px;
-    height: auto;
-    transition: width 0.3s ease-in-out;
+/* Add styles for the contact page button */
+.coffee-support {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
 }
 
-/* Class to be added when scrolling */
-#buyMeCoffeeImg.scrolling {
-    width: 50px;
-}
-
-/* Responsive adjustments for mobile */
-@media (max-width: 768px) {
-    #buyMeCoffeeBtn.near-footer {
-        bottom: 96px; /* Equivalent to bottom-24 in your Tailwind */
-    }
-}
-
-@media (min-width: 769px) {
-    #buyMeCoffeeBtn.near-footer {
-        bottom: 24px; /* Equivalent to md:bottom-6 in your Tailwind */
-    }
+.coffee-support:hover {
+  transform: scale(1.05);
 }
